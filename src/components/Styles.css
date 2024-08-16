@@ -1,0 +1,41 @@
+.video-container {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden; /* Hide overflow to ensure smooth transitions */
+}
+
+.videos-wrapper {
+  display: flex;
+  transition: transform 1s ease-in-out; /* Smooth transition for carousel effect */
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.progress-dots {
+  display: flex;
+  gap: 10px; /* Space between dots */
+}
+
+.progress-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: gray;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
